@@ -1,0 +1,411 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter',-apple-system,'Segoe UI',Roboto,sans-serif;
+}
+
+@media (max-width:900px) {
+    /* =============navigation================== */
+    .navigation-bar ul {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: -600px;
+        width: 40%;
+        z-index: 99999;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+        transition: 0.3s ease ;
+        -webkit-transition: 0.3s ease ;
+        -moz-transition: 0.3s ease ;
+        -ms-transition: 0.3s ease ;
+        -o-transition: 0.3s ease ;
+    }
+
+    /* body::before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 1;
+        -webkit-transform:;
+        -moz-transform:;
+        -ms-transform:;
+        -o-transform:;
+        -webkit-filter: blur(20px);
+    } */
+
+
+    .navigation-bar ul li {
+        border: none;
+        width: 40%;
+        height: 10% ;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 9000px;
+        -webkit-border-radius: 9000px;
+        -moz-border-radius: 9000px;
+        -ms-border-radius: 9000px;
+        -o-border-radius: 9000px;
+        background-color: var(--primary-color);
+
+    }
+    
+    .navigation-bar ul li a {
+        color: white;
+    }
+
+    header > i{
+        display: inline-block !important;
+        font-size: 20px ;
+        position: absolute;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+        color: white;
+    }
+
+    .navigation-bar ul > i {
+        display: inline-block ;
+        font-size: 20px;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+
+
+    /* ======================= home ====================== */
+    /* ======================= left part ====================== */
+    .home-section {
+        padding-top: 30px;
+        column-gap: 30px;
+    }
+
+    .home-section .left-part .new-version {
+        font-size: 10px;
+        margin-bottom: 20px;
+    }
+
+    .home-section .left-part h1 {
+        font-size: 50px;
+    }
+    .home-section .left-part p {
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+
+    .home-section .left-part .free-trial-container {
+        gap: 10px;
+        padding-bottom: 20px;
+    }
+
+    .home-section .left-part .free-trial-container button {
+        padding: 10px 15px;
+        font-size: 13px;
+    }
+
+    .home-section .left-part .free-trial-container button:nth-child(1){
+        font-size: 13px;
+    }
+
+    .home-section .left-part .trusted .trusted-text {
+        font-size: 14px;
+    }
+
+    /*=================== left part end ===================*/
+    /*=================== right part start ===================*/
+    .home-section .right-part .img-container{
+        border-radius: 20px;
+        padding: 12px;
+    }
+
+    .home-section .right-part .img-container .img-body{
+        height: 190px;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+    }
+
+    .container { 
+        max-width: 800px;
+    }
+    /*=================== right part enc ===================*/
+    /*=================== home section end ===================*/
+    /*=================== HEADER end ===================*/
+
+
+
+    /*==================== features section start ====================*/
+    .features {
+        padding: 70px 0;
+    }
+
+    .features h2 {
+        font-size: 35px;
+        margin: 10px 0;  
+    }
+
+    .features > p {
+        margin-bottom: 40px;
+        font-size: 15px;
+    }
+
+    .features .cards {
+        grid-template-columns: repeat(2,1fr);
+        gap: 28px;
+    }
+
+    .features .cards .one-card:nth-child(3) {
+        grid-column: 1/-1;
+        justify-self: center;
+    }
+    
+    /*==================== features section end ====================*/
+
+
+    /*====================  Testimonials section start ====================*/
+    .reviews {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 28px;
+    }
+    .reviews .one-Review {
+        justify-self: center;
+    }
+    /*====================  Testimonials section end ====================*/
+
+
+    
+    /*====================  Pricing section start ====================*/
+    .pricing {
+        padding: 60px 0;
+    }
+
+    .pricing-container .text{
+        padding-bottom: 40px;
+    }
+
+    .pricing-container .text > h2 {
+        font-size: 30px;
+        margin: 10px 0;
+    }
+
+    .pricing-container .pricing-cards {
+        grid-template-columns: repeat(2,1fr);
+        gap: 40px;
+    }
+
+    .pricing-container .pricing-cards .one-pricing-card {
+        padding: 25px;
+    }
+
+    .pricing-container .pricing-cards .one-pricing-card .price {
+        font-size: 35px;
+    }
+
+    .pricing-container .one-pricing-card ul li {
+        padding: 3px 0;
+        font-size: 14px;
+    }
+
+    .pricing-container .one-pricing-card .card-btn {
+        font-size: 14px;
+        padding: 10px 22px;
+    }
+
+    .pricing-cards .one-pricing-card:nth-child(2)::before {
+        padding: 4px 12px;
+    }
+
+    /*====================  Pricing section start ====================*/
+
+    /* ======================= last section start ==================== */
+    .section-div .color-palette{
+        grid-template-columns: repeat(4,1fr);
+        gap: 12px;
+    }
+    /* ======================= last section end ==================== */
+
+
+
+
+    /*====================  ready section start ====================*/
+    .ready-section {
+        padding: 60px 0;
+    }
+    /*====================  ready section end ====================*/
+}
+
+
+
+
+/* =================================================================================
+=====================================================================================
+===================================================================================
+==================================================================================
+===================================================================================
+*/
+
+
+@media (max-width:664px) {
+    /*====================  Active team section start ====================*/
+    .grid-parent {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 20px;
+    }
+
+    section:nth-child(3) {
+        padding: 60px 0;
+    }
+    /*====================  Active team section end ====================*/
+}
+
+@media (max-width:589px) {
+    /*=================== left part end ===================*/
+    .home-section {
+        padding-top: 64px;
+        grid-template-columns: 1fr;
+        row-gap: 48px;
+        
+    }
+    /*=================== left part start ===================*/
+
+
+
+
+    /* ======================= home ====================== */
+    /* ======================= left part ====================== */
+    .home-section .left-part .free-trial-container {
+        justify-content: center;
+    }
+    .home-section .left-part {
+        text-align: center;
+    }
+    .home-section .left-part p{
+        max-width: none;
+    }
+
+    .home-section .left-part .trusted {
+        justify-content: center;
+    }
+
+    /*=================== left part end ===================*/
+    /*=================== right part start ===================*/
+
+
+    .container { 
+        max-width: 800px;
+    }
+    /*=================== right part enc ===================*/
+    /*=================== home section end ===================*/
+    /*=================== HEADER end ===================*/
+
+
+
+    /*==================== features section start ====================*/
+    .features {
+        padding: 50px 0;
+    }
+
+    .features h2 {
+        font-size: 25px;
+    }
+
+    .features .cards {
+        grid-template-columns: 1fr;
+        row-gap: 28px;
+    }
+
+
+    /*====================  Testimonials section start ====================*/
+    .reviews {
+        grid-template-columns: 1fr;
+        row-gap: 28px;
+    }
+
+    /*====================  Testimonials section end ====================*/
+
+
+    
+    /*====================  Pricing section start ====================*/
+    .pricing {
+        padding: 50px 0;
+    }
+
+
+    .pricing-container .pricing-cards {
+        grid-template-columns: 1fr;
+        row-gap: 40px;
+    }
+
+    .pricing-container .pricing-cards .one-pricing-card {
+        min-width: 250px;
+    }
+
+
+
+
+
+    .pricing-container {
+        place-items: center;
+    }
+
+    .pricing-container .pricing-cards .one-pricing-card {
+        padding: 25px;
+    }
+
+    .pricing-container .pricing-cards .one-pricing-card .price {
+        font-size: 35px;
+    }
+
+    .pricing-container .one-pricing-card ul li {
+        padding: 3px 0;
+        font-size: 14px;
+    }
+
+    .pricing-container .one-pricing-card .card-btn {
+        font-size: 14px;
+        padding: 10px 22px;
+    }
+
+    .pricing-cards .one-pricing-card:nth-child(2)::before {
+        padding: 4px 12px;
+    }
+
+    /*====================  Pricing section start ====================*/
+
+    /* ======================= last section start ==================== */
+    .section-div .color-palette{
+        grid-template-columns: repeat(4,1fr);
+        gap: 12px;
+    }
+    /* ======================= last section end ==================== */
+
+
+
+
+    /*====================  ready section start ====================*/
+    .ready-section {
+        padding: 60px 0;
+    }
+    /*====================  ready section end ====================*/
+
+}
+
+
+
